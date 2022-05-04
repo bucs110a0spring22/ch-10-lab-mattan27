@@ -1,8 +1,11 @@
 import pygame
 import random
 #model
-class Enemy(pygame.sprite.Sprite):
+class Enemy(pygame.sprite.Sprite, pygame.inflate.Rect):
     def __init__(self, name, x, y, img_file):
+      '''
+      Sets variables for different images and coordinates
+      '''
         #initialize all the Sprite functionality
         pygame.sprite.Sprite.__init__(self)
 
@@ -21,4 +24,13 @@ class Enemy(pygame.sprite.Sprite):
         self.speed = 2
 
     def update(self):
-        print("'Update me,' says " + self.name)
+      """
+      Updates the enemies to move one unit randomly throughout the window and chaning the speed
+      """
+      changeCor = random.randrange(-1,2)
+      self.rect.x += changeCor
+      self.rect.y += changeCor
+
+      changeSpeed = random.randrange(-2,2)
+      self.speed += changeSpeed
+      self.speed += changeSpeed

@@ -8,20 +8,20 @@
 Replace anything surrounded by the `< >` symbols._
 
 ## SUMMARY:
- < Provide a short description of your program's functionality. No more than a couple sentences. >
+ Updating a pygame to have the enemies move randomly and adding a unique feature to the code.
 #### Unique Feature
- < Describe the unique feature you added >
+ Changing the speed of the enemies to make them harder to catch and attack.
 
 ## GRACE DAYS
-Grace days used for this assignment: < # >
+Grace days used for this assignment: 1
 
-Grace days remaining: < # >/5
+Grace days remaining: 0/5
 
 ## KNOWN BUGS AND INCOMPLETE PARTS:
- < What parts of the project you were not able to complete >
+ Docstrings after __init__() cause errors to code.
 
 ## REFERENCES:
- < List any outside resources used >
+  pygame.org
 
 ## MISCELLANEOUS COMMENTS:
- < Anything you would like the grader to know >
+  None
